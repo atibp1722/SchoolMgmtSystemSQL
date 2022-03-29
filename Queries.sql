@@ -332,7 +332,7 @@ BEGIN
 	INSERT INTO TeacherDetailsAudit
 	VALUES
 	(
-		'Teacher wirh ID: '+@TeacherID +
+		'Teacher with ID: '+@TeacherID +
 		' has been deleted '+
 		'on '+ CAST(GETDATE() AS varchar(25))
 	)	
@@ -348,7 +348,7 @@ BEGIN
 		@CourseID = CourseID FROM inserted
 	INSERT INTO CourseDetailsAudit
 	VALUES 
-		('New student with ID: '+ @CourseID +
+		('New course with ID: '+ @CourseID +
 			' is added at '+
 			CAST(Getdate() AS nvarchar(20))
 		)
