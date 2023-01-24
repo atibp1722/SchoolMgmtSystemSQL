@@ -392,5 +392,3 @@ BEGIN
 		DELETE FROM #TempTable WHERE EmployeeID = @EmployeeID
 	END
 END
-
-SELECT * FROM ParentDetails;
